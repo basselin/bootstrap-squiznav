@@ -17,5 +17,12 @@
         "jquery", "javascript",
         "bootstrap", "responsive",
         "nav", "navigation", "dropdown"
+    ],
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
     ]
 }
