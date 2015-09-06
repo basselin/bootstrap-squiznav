@@ -3,8 +3,6 @@ Boostrap SquizNav
 
 This script moves items `nav` in `dropdown` if the container is not large enough.
 
-![SquizNav](http://github.161.io/bootstrap-squiznav/demo.gif)
-
 
 Usage
 -----
