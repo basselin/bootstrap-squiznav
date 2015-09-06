@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Bootstrap SquizNav</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="squiznav.min.js"></script>
+    <script>
+    jQuery(function($) {
+        $('.squiz-me').squizNav();
+    });
+    </script>
+
+</head>
+<body>
+    <a href="https://github.com/basselin"><img style="position:absolute; top:0; right:0; border:0; z-index:1;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"/></a>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class="page-header">Bootstrap SquizNav</h1>
+                <p>
+                    This script moves items <code>nav</code> in <code>dropdown</code> if the container is not large enough.
+                </p>
+                <p>
+                    To see the magic happening, resize your window!
+                </p>
+
+                <h2>Using HTML</h2>
+                <pre>&lt;ul class=&quot;<strong>nav</strong> nav-tabs&quot; <strong>data-squiznav=&quot;&quot;&gt;</strong></pre>
+                <p>&nbsp;</p>
+
+                <h2>Using Javascript</h2>
+                <pre>$('.squiz-me')<strong>.squizNav()</strong>;</pre>
+                <p>&nbsp;</p>
+
+                <h2>Samples</h2>
+                <ul class="nav nav-tabs" data-squiznav="">
+                    <li><a href="#">Menu 1</a></li>
+                    <li><a href="#">Menu 2</a></li>
+                    <li><a href="#">Menu 3</a></li>
+                    <li><a href="#">Menu 4</a></li>
+                    <li><a href="#">Menu 5</a></li>
+                    <li><a href="#">Menu 6</a></li>
+                    <li class="active"><a href="#">Menu 7</a></li>
+                    <li><a href="#">Menu 8</a></li>
+                    <li><a href="#">Menu 9</a></li>
+                    <li><a href="#">Menu 10</a></li>
+                    <li><a href="#">Menu 11</a></li>
+                </ul>
+                <p>&nbsp;</p>
+
+                <ul class="nav nav-tabs squiz-me">
+                    <li><a href="#">Menu 1 <strong class="hidden-xs">.hidden-xs</strong></a></li>
+                    <li><a href="#">Menu 2 <strong class="hidden-xs">.hidden-xs</strong></a></li>
+                    <li><a href="#">Menu 3</a></li>
+                    <li><a href="#">Menu 4</a></li>
+                    <li><a href="#">Menu 5</a></li>
+                    <li><a href="#">Menu 6</a></li>
+                    <li><a href="#">Menu 7</a></li>
+                    <li><a href="#">Menu 8</a></li>
+                    <li><a href="#">Menu 9</a></li>
+                    <li class="active"><a href="#">Menu 10</a></li>
+                    <li><a href="#">Menu 11</a></li>
+                </ul>
+                <p>&nbsp;</p>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-6 col-sm-8">
+                <ul class="nav nav-pills squiz-me">
+                    <li class="active"><a href="#">Menu 1</a></li>
+                    <li><a href="#">Menu 2</a></li>
+                    <li><a href="#">Menu 3</a></li>
+                    <li><a href="#">Menu 4</a></li>
+                    <li><a href="#">Menu 5</a></li>
+                    <li><a href="#">Menu 6</a></li>
+                    <li><a href="#">Menu 7</a></li>
+                    <li><a href="#">Menu 8</a></li>
+                    <li><a href="#">Menu 9</a></li>
+                    <li><a href="#">Menu 10</a></li>
+                    <li><a href="#">Menu 11</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

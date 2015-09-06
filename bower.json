@@ -1,0 +1,21 @@
+{
+    "name": "bootstrap-squiznav",
+    "description": "This script moves items nav in dropdown if the container is not large enough.",
+    "version": "0.1.0",
+    "license": "MIT",
+    "main": "squiznav.min.js",
+    "author": {
+        "name": "Benoit Asselin",
+        "email": "benoit(at)161.io",
+        "url": "http://161.io"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/basselin/bootstrap-squiznav.git"
+    },
+    "keywords": [
+        "jquery", "javascript",
+        "bootstrap", "responsive",
+        "nav", "navigation", "dropdown"
+    ]
+}
