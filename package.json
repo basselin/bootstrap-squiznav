@@ -2,7 +2,7 @@
     "name": "bootstrap-squiznav",
     "title": "Bootstrap SquizNav",
     "description": "This script moves items nav in dropdown if the container is not large enough.",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "license": "MIT",
     "main": "squiznav.min.js",
     "author": {

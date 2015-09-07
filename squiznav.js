@@ -1,5 +1,5 @@
 /*!
- * squiznav.js v0.1.0
+ * squiznav.js v0.1.1
  * (c) 2015, Benoit Asselin benoit(at)161.io
  * MIT License
  */
@@ -10,7 +10,8 @@
         options = $.extend({
             // defaults
             dropdown: '<li class="pull-right dropdown"><a href="#" data-toggle="dropdown"><span class="glyphicon glyphicon-triangle-bottom"></span></a><ul class="dropdown-menu"></ul></li>', // string
-            attribut: 'data-index' // String
+            attribut: 'data-index', // String
+            delta: 0 // Number
         }, options);
 
         var optAttr = options.attribut;
@@ -57,7 +58,7 @@
 
             function gotoDropdown() {
                 var $elt;
-                var maxWidth = $nav.innerWidth();
+                var maxWidth = $nav.innerWidth() - options.delta;
                 var childrenWidth = 0;
                 var navFull = false;
 

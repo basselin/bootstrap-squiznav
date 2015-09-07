@@ -7,7 +7,7 @@ This script moves items `nav` in `dropdown` if the container is not large enough
 Usage
 -----
 
-With Bootstrap 3.3.*
+With Bootstrap 3.*
 
 ```html
 <script src="squiznav.min.js"></script>
@@ -36,5 +36,6 @@ Options
 
 | Name | Description | Type | Default |
 |------|-------------|------|---------|
-| `dropdown` | The empty template of the Dropdown. | String | `<li class="pull-right dropdown"><a href="#" data-toggle="dropdown"><span class="glyphicon glyphicon-triangle-bottom"></span></a><ul class="dropdown-menu"></ul></li>` |
-| `attribut` | Indexing attribute for `li` elements | String | `data-index` |
+| `dropdown` | The empty template of the Dropdown: `<li class="pull-right dropdown"><a href="#" data-toggle="dropdown"><span class="glyphicon glyphicon-triangle-bottom"></span></a><ul class="dropdown-menu"></ul></li>` | String | `< .. >` |
+| `attribut` | Indexing attribute for `li` elements. | String | `data-index` |
+| `delta` | Pixel width decremented from the container. | Number | `0` |
