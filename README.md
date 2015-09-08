@@ -38,4 +38,4 @@ Options
 |------|-------------|------|---------|
 | `dropdown` | The empty template of the Dropdown: `<li class="pull-right dropdown"><a href="#" data-toggle="dropdown"><span class="glyphicon glyphicon-triangle-bottom"></span></a><ul class="dropdown-menu"></ul></li>` | String | `< .. >` |
 | `attribut` | Indexing attribute for `li` elements. | String | `data-index` |
-| `delta` | Pixel width decremented from the container. | Number | `0` |
+| `delta` | Pixel width decremented from the container. *You can use `data-squiznav="YOUR_DELTA"`*. | Number | `0` |
