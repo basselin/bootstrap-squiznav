@@ -1,5 +1,5 @@
 /*!
- * squiznav.js v0.1.1
+ * squiznav.js v0.1.2
  * (c) 2015, Benoit Asselin benoit(at)161.io
  * MIT License
  */
@@ -20,6 +20,12 @@
             var $nav = $(this),
                 $children = $nav.children();
             var lastIndex = -1;
+            var optDelta = options.delta;
+            var dataSquiznav = $nav.attr('data-squiznav');
+            if (dataSquiznav && $.isNumeric(dataSquiznav)) {
+                optDelta = parseFloat(dataSquiznav);
+            }
+
             $children.each(function() {
                 var $elt = $(this);
                 lastIndex = $elt.index();
@@ -58,7 +64,7 @@
 
             function gotoDropdown() {
                 var $elt;
-                var maxWidth = $nav.innerWidth() - options.delta;
+                var maxWidth = $nav.innerWidth() - optDelta;
                 var childrenWidth = 0;
                 var navFull = false;
 
