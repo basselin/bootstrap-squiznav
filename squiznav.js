@@ -4,14 +4,14 @@
  * MIT License
  */
 
-;(function($, window, undefined) {
+;(function(window, document, $, undefined) {
 
     $.fn.squizNav = function(options) {
         options = $.extend({
             // defaults
-            dropdown: '<li class="pull-right dropdown"><a href="#" data-toggle="dropdown"><span class="glyphicon glyphicon-triangle-bottom"></span></a><ul class="dropdown-menu"></ul></li>', // string
+            dropdown: '<li class="pull-right dropdown"><a href="#" data-toggle="dropdown"><i class="glyphicon glyphicon-triangle-bottom"></i></a><ul class="dropdown-menu"></ul></li>', // string
             attribut: 'data-index', // String
-            delta: 0 // Number
+            delta   : 0 // Number
         }, options);
 
         var optAttr = options.attribut;
@@ -103,4 +103,4 @@
         $('.nav[data-squiznav]').squizNav();
     });
 
-})(jQuery, window);
+})(window, document, jQuery);
